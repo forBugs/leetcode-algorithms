@@ -1,0 +1,226 @@
+Classfile /G:/develop/leetcode-algorithms/src/com/fanbai/leetcode/sort/VolatileTest.class
+  Last modified 2021-5-23; size 1920 bytes
+  MD5 checksum 1d4c49e0f979b7328c9efb880f58259c
+  Compiled from "VolatileTest.java"
+public class com.fanbai.leetcode.sort.VolatileTest
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #25.#43       // java/lang/Object."<init>":()V
+    #2 = Fieldref           #24.#44       // com/fanbai/leetcode/sort/VolatileTest.race:I
+    #3 = Class              #45           // java/lang/Thread
+    #4 = InvokeDynamic      #0:#50        // #0:run:()Ljava/lang/Runnable;
+    #5 = Methodref          #3.#51        // java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+    #6 = Methodref          #3.#52        // java/lang/Thread.start:()V
+    #7 = Methodref          #3.#53        // java/lang/Thread.join:()V
+    #8 = Fieldref           #54.#55       // java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+    #9 = Long               9l
+   #11 = Methodref          #54.#56       // java/util/concurrent/TimeUnit.sleep:(J)V
+   #12 = Fieldref           #57.#58       // java/lang/System.out:Ljava/io/PrintStream;
+   #13 = Methodref          #59.#60       // java/io/PrintStream.println:(I)V
+   #14 = Methodref          #24.#61       // com/fanbai/leetcode/sort/VolatileTest.increase:()V
+   #15 = Class              #62           // java/lang/StringBuilder
+   #16 = Methodref          #15.#43       // java/lang/StringBuilder."<init>":()V
+   #17 = Methodref          #3.#63        // java/lang/Thread.currentThread:()Ljava/lang/Thread;
+   #18 = Methodref          #3.#64        // java/lang/Thread.getName:()Ljava/lang/String;
+   #19 = Methodref          #15.#65       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #20 = String             #66           // --
+   #21 = Methodref          #15.#67       // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #22 = Methodref          #15.#68       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #23 = Methodref          #59.#69       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #24 = Class              #70           // com/fanbai/leetcode/sort/VolatileTest
+   #25 = Class              #71           // java/lang/Object
+   #26 = Utf8               race
+   #27 = Utf8               I
+   #28 = Utf8               <init>
+   #29 = Utf8               ()V
+   #30 = Utf8               Code
+   #31 = Utf8               LineNumberTable
+   #32 = Utf8               increase
+   #33 = Utf8               main
+   #34 = Utf8               ([Ljava/lang/String;)V
+   #35 = Utf8               StackMapTable
+   #36 = Class              #72           // "[Ljava/lang/Thread;"
+   #37 = Utf8               Exceptions
+   #38 = Class              #73           // java/lang/InterruptedException
+   #39 = Utf8               lambda$main$0
+   #40 = Utf8               <clinit>
+   #41 = Utf8               SourceFile
+   #42 = Utf8               VolatileTest.java
+   #43 = NameAndType        #28:#29       // "<init>":()V
+   #44 = NameAndType        #26:#27       // race:I
+   #45 = Utf8               java/lang/Thread
+   #46 = Utf8               BootstrapMethods
+   #47 = MethodHandle       #6:#74        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #48 = MethodType         #29           //  ()V
+   #49 = MethodHandle       #6:#75        // invokestatic com/fanbai/leetcode/sort/VolatileTest.lambda$main$0:()V
+   #50 = NameAndType        #76:#77       // run:()Ljava/lang/Runnable;
+   #51 = NameAndType        #28:#78       // "<init>":(Ljava/lang/Runnable;)V
+   #52 = NameAndType        #79:#29       // start:()V
+   #53 = NameAndType        #80:#29       // join:()V
+   #54 = Class              #81           // java/util/concurrent/TimeUnit
+   #55 = NameAndType        #82:#83       // SECONDS:Ljava/util/concurrent/TimeUnit;
+   #56 = NameAndType        #84:#85       // sleep:(J)V
+   #57 = Class              #86           // java/lang/System
+   #58 = NameAndType        #87:#88       // out:Ljava/io/PrintStream;
+   #59 = Class              #89           // java/io/PrintStream
+   #60 = NameAndType        #90:#91       // println:(I)V
+   #61 = NameAndType        #32:#29       // increase:()V
+   #62 = Utf8               java/lang/StringBuilder
+   #63 = NameAndType        #92:#93       // currentThread:()Ljava/lang/Thread;
+   #64 = NameAndType        #94:#95       // getName:()Ljava/lang/String;
+   #65 = NameAndType        #96:#97       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #66 = Utf8               --
+   #67 = NameAndType        #96:#98       // append:(I)Ljava/lang/StringBuilder;
+   #68 = NameAndType        #99:#95       // toString:()Ljava/lang/String;
+   #69 = NameAndType        #90:#100      // println:(Ljava/lang/String;)V
+   #70 = Utf8               com/fanbai/leetcode/sort/VolatileTest
+   #71 = Utf8               java/lang/Object
+   #72 = Utf8               [Ljava/lang/Thread;
+   #73 = Utf8               java/lang/InterruptedException
+   #74 = Methodref          #101.#102     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #75 = Methodref          #24.#103      // com/fanbai/leetcode/sort/VolatileTest.lambda$main$0:()V
+   #76 = Utf8               run
+   #77 = Utf8               ()Ljava/lang/Runnable;
+   #78 = Utf8               (Ljava/lang/Runnable;)V
+   #79 = Utf8               start
+   #80 = Utf8               join
+   #81 = Utf8               java/util/concurrent/TimeUnit
+   #82 = Utf8               SECONDS
+   #83 = Utf8               Ljava/util/concurrent/TimeUnit;
+   #84 = Utf8               sleep
+   #85 = Utf8               (J)V
+   #86 = Utf8               java/lang/System
+   #87 = Utf8               out
+   #88 = Utf8               Ljava/io/PrintStream;
+   #89 = Utf8               java/io/PrintStream
+   #90 = Utf8               println
+   #91 = Utf8               (I)V
+   #92 = Utf8               currentThread
+   #93 = Utf8               ()Ljava/lang/Thread;
+   #94 = Utf8               getName
+   #95 = Utf8               ()Ljava/lang/String;
+   #96 = Utf8               append
+   #97 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #98 = Utf8               (I)Ljava/lang/StringBuilder;
+   #99 = Utf8               toString
+  #100 = Utf8               (Ljava/lang/String;)V
+  #101 = Class              #104          // java/lang/invoke/LambdaMetafactory
+  #102 = NameAndType        #105:#109     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #103 = NameAndType        #39:#29       // lambda$main$0:()V
+  #104 = Utf8               java/lang/invoke/LambdaMetafactory
+  #105 = Utf8               metafactory
+  #106 = Class              #111          // java/lang/invoke/MethodHandles$Lookup
+  #107 = Utf8               Lookup
+  #108 = Utf8               InnerClasses
+  #109 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #110 = Class              #112          // java/lang/invoke/MethodHandles
+  #111 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #112 = Utf8               java/lang/invoke/MethodHandles
+{
+  public static volatile int race;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_VOLATILE
+
+  public com.fanbai.leetcode.sort.VolatileTest();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+
+  public static void increase();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #2                  // Field race:I
+         3: iconst_1
+         4: iadd
+         5: putstatic     #2                  // Field race:I
+         8: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+
+  public static void main(java.lang.String[]) throws java.lang.InterruptedException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: bipush        20
+         2: anewarray     #3                  // class java/lang/Thread
+         5: astore_1
+         6: iconst_0
+         7: istore_2
+         8: iload_2
+         9: bipush        20
+        11: if_icmpge     47
+        14: aload_1
+        15: iload_2
+        16: new           #3                  // class java/lang/Thread
+        19: dup
+        20: invokedynamic #4,  0              // InvokeDynamic #0:run:()Ljava/lang/Runnable;
+        25: invokespecial #5                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+        28: aastore
+        29: aload_1
+        30: iload_2
+        31: aaload
+        32: invokevirtual #6                  // Method java/lang/Thread.start:()V
+        35: aload_1
+        36: iload_2
+        37: aaload
+        38: invokevirtual #7                  // Method java/lang/Thread.join:()V
+        41: iinc          2, 1
+        44: goto          8
+        47: getstatic     #8                  // Field java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+        50: ldc2_w        #9                  // long 9l
+        53: invokevirtual #11                 // Method java/util/concurrent/TimeUnit.sleep:(J)V
+        56: getstatic     #12                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: getstatic     #2                  // Field race:I
+        62: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        65: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 6
+        line 17: 14
+        line 24: 29
+        line 25: 35
+        line 16: 41
+        line 28: 47
+        line 35: 56
+        line 37: 65
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 8
+          locals = [ class "[Ljava/lang/Thread;", int ]
+        frame_type = 250 /* chop */
+          offset_delta = 38
+    Exceptions:
+      throws java.lang.InterruptedException
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #2                  // Field race:I
+         4: return
+      LineNumberTable:
+        line 8: 0
+}
+SourceFile: "VolatileTest.java"
+InnerClasses:
+     public static final #107= #106 of #110; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #47 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #48 ()V
+      #49 invokestatic com/fanbai/leetcode/sort/VolatileTest.lambda$main$0:()V
+      #48 ()V
